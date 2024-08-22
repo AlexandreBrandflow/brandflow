@@ -1,0 +1,12 @@
+{
+    "name": "acf/bfw-evenements",
+    "title": "bfw-evenements",
+    "description": "",
+    "category": "text",
+    "icon": "admin-comments",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "bfw-evenements.php"
+    },
+    "align": "full"
+}

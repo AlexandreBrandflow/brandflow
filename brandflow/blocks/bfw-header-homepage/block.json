@@ -1,0 +1,12 @@
+{
+    "name": "acf/bfw-header-homepage",
+    "title": "bfw-header-homepage",
+    "description": "",
+    "category": "text",
+    "icon": "admin-comments",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "bfw-header-homepage.php"
+    },
+    "align": "full"
+}

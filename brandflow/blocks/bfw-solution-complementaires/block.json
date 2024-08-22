@@ -1,0 +1,12 @@
+{
+    "name": "acf/bfw-solution-complementaires",
+    "title": "bfw-solution-complementaires",
+    "description": "",
+    "category": "text",
+    "icon": "admin-comments",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "bfw-solution-complementaires.php"
+    },
+    "align": "full"
+}

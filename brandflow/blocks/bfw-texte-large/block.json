@@ -1,0 +1,12 @@
+{
+    "name": "acf/bfw-texte-large",
+    "title": "bfw-texte-large",
+    "description": "",
+    "category": "text",
+    "icon": "admin-comments",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "bfw-texte-large.php"
+    },
+    "align": "full"
+}

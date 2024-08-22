@@ -1,0 +1,12 @@
+{
+    "name": "acf/bfw-texte-image-multi",
+    "title": "bfw-texte-image-multi",
+    "description": "",
+    "category": "text",
+    "icon": "admin-comments",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "bfw-texte-image-multi.php"
+    },
+    "align": "full"
+}

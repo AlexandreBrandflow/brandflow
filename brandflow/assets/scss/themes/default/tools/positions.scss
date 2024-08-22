@@ -1,0 +1,23 @@
+.pos-rel {position: relative}
+.pos-abs {position: absolute}
+
+.abs-l-0 { left: 0; }
+.abs-r-0 { right: 0; }
+.abs-t-0 { top: 0; }
+.abs-b-0 { bottom: 0; }
+
+@each $breakpoint_name, $breakpoint_size in $breakpoints {
+
+  @media screen and (min-width: $breakpoint_size) {
+
+    .pos-rel-#{$breakpoint_name} { position: relative; }
+    .pos-abs-#{$breakpoint_name} { position: absolute; }
+
+    .abs-l-#{$breakpoint_name}-0 { left: 0; }
+    .abs-r-#{$breakpoint_name}-0 { right: 0; }
+    .abs-t-#{$breakpoint_name}-0 { top: 0; }
+    .abs-b-#{$breakpoint_name}-0 { bottom: 0; }
+
+  }
+
+}

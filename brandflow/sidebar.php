@@ -1,0 +1,1 @@
+<?php /* Besoin de rien là dedans, les sidebar c'est nul !*/ ?>

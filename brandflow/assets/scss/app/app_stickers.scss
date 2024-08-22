@@ -1,0 +1,13 @@
+.sticker
+{
+  font-family: var(--mono-font);
+  letter-spacing: .03rem;
+  color: var(--color-primary-cta);
+  font-weight: 400;
+  font-size:0.833rem;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border: .5px solid var(--color-primary-cta);
+  border-radius: 36px;
+  display: inline-flex;
+}

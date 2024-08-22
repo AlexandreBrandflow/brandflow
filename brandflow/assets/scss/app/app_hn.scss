@@ -1,0 +1,57 @@
+.sur_titre
+{
+  font-family: var(--mono-font);
+  letter-spacing: .03rem;
+  color: var(--color-primary-cta);
+  font-weight: 500;
+  font-size:0.889rem;
+  text-transform: uppercase;
+}
+
+h1,h2,h3,h4
+{
+  font-family: var(--h-font);
+}
+
+h4, .h4
+{
+  font-size: clamp(16px, 1.4vw, 20px);
+}
+
+h3, .h3
+{
+  font-size: clamp(20px, 1.6vw, 24px);
+  font-weight: 600;
+}
+
+.h35
+{
+  font-size: clamp(24px, 2.4vw, 36px);
+}
+
+h1, h2, .h1, .h2
+{
+  strong
+  {
+    font-weight: 600;
+    color: var(--color-primary-cta);
+  }
+}
+
+h2, .h2
+{
+  font-weight: 600;
+  font-size: clamp(28px, 3vw, 52px);
+}
+
+.h15
+{
+  font-size: clamp(32px, 3.4vw, 76px);
+  font-weight: 600;
+}
+
+h1, .h1
+{
+  font-size: clamp(38px, 4vw, 80px);
+  font-weight: 600;
+}

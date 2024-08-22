@@ -1,0 +1,12 @@
+{
+    "name": "acf/bfw-loop-slider",
+    "title": "bfw-loop-slider",
+    "description": "",
+    "category": "text",
+    "icon": "admin-comments",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "bfw-loop-slider.php"
+    },
+    "align": "full"
+}

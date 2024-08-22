@@ -1,0 +1,21 @@
+.wp-block-quote {
+	margin: 0;
+	text-align: center;
+	background: #f2f2f2;
+	&::before{
+		content:"''";
+		font-size: 150px;
+		font-weight: bold;
+		color:lightgray;
+
+	}
+	p {
+		font-size: 20px;
+		font-style: italic;
+	}
+	cite {
+		font-size: 16px;
+		font-style: normal;
+		color: grey;
+	}
+}

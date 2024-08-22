@@ -1,0 +1,78 @@
+@import "app_variables";
+@import "app_normalize";
+@import "app_hamburger";
+@import "app_tools";
+@import "app_fonts";
+@import "app/app_containers";
+@import "app/app_grid";
+@import "app/app_header";
+@import "app/app_footer";
+@import "app/app_hn";
+@import "app/app_forms";
+@import "app/app_buttons";
+@import "app/app_stickers";
+@import "app/app_img_svg";
+@import "app/app_modals";
+@import "app/app_swiper";
+@import 'themes/default/app_default.scss';
+
+///// LENIS
+/// 
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+///// LENIS
+
+[class*="block-bfw-"] {
+  position: relative;
+
+  .content {
+    z-index: 2;
+    position: relative;
+  }
+}
+
+.block-bfw
+{
+  .content {
+    p {
+      font-size: 1.167rem; //21px
+
+      +p {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+
+
+
+// blocs
+
+
+// ELEMENTS
+
+
+/// BLOCKS
+/// 
+
+
+

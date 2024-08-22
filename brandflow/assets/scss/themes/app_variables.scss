@@ -1,0 +1,62 @@
+// VARIABLES SCSS
+
+$site_breakpoint_xs: 375px;
+$site_breakpoint_sm: 768px;
+$site_breakpoint_md: 992px;
+$site_breakpoint_lg: 1200px;
+$site_breakpoint_xl: 1600px;
+//TODO: Prendre en charge le xxl ?
+
+$side_gutter_width: 50px;
+
+:root {
+  font-size: 20px;
+
+  --font: sans-serif;
+  --h-font: sans-serif;
+
+  --vpd: 25px;
+  --hpd: 10px;
+
+  --navtop: 60px;
+  --navtop-scroll: 40px;
+  --footer: 50px;
+
+  --color-primary: #B68D40;
+  --color-secondary: #F4EBD0;
+
+  
+}
+
+@media screen and (min-width: $site_breakpoint_xs) {
+
+}
+
+@media screen and (min-width: $site_breakpoint_sm) {
+
+}
+
+@media screen and (min-width: $site_breakpoint_md) {
+
+  :root {
+    --vpd: 50px;
+    --hpd: 25px;
+  }
+
+}
+
+@media screen and (min-width: $site_breakpoint_lg) {
+
+  :root {
+    --hpd: 50px;
+  }
+
+}
+
+@media screen and (min-width: $site_breakpoint_xl) {
+
+  :root {
+    --hpd: 7.5vw;
+  }
+
+}

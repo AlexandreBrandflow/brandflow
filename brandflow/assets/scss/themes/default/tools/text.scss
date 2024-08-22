@@ -1,0 +1,32 @@
+.text-capitalize { text-transform: capitalize; }
+.text-uppercase { text-transform: uppercase; }
+
+.text-left {text-align: left}
+.text-center {text-align: center}
+.text-right {text-align: right}
+/*Et que j'en prenne pas un à m'ajouter la justification sur du web*/
+
+@each $breakpoint_name, $breakpoint_size in $breakpoints {
+
+  @media screen and (min-width: $breakpoint_size) {
+
+    .text-#{$breakpoint_name}-capitalize { text-transform: capitalize; }
+    .text-#{$breakpoint_name}-uppercase { text-transform: uppercase; }
+
+    .text-#{$breakpoint_name}-left {text-align: left}
+    .text-#{$breakpoint_name}-center {text-align: center}
+    .text-#{$breakpoint_name}-right {text-align: right}
+
+  }
+
+}
+
+
+@for $i from 100 through 1000 {
+  $step: 100;
+  @if $i % $step == 0 {
+    .fw-#{$i} {
+      font-weight: $i;
+    }
+  }
+}

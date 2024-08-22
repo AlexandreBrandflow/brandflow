@@ -1,0 +1,54 @@
+08/01/23 2:38:54: app.scss - parse error: failed at `backgrou` /var/www/vhosts/wonderful-hoover.51-195-235-82.plesk.page/httpdocs/wp-content/themes/bfw/assets/scss/app.scss on line 953, at column 3
+09/12/23 8:05:50: app.scss - unclosed block: failed at `` /var/www/vhosts/wonderful-hoover.51-195-235-82.plesk.page/httpdocs/wp-content/themes/bfw/assets/scss/app.scss on line 924, at column 0
+03/29/24 10:48:28: app.scss - parse error: failed at `background-image: radial-gradient(ci` /var/www/vhosts/optimistic-antonelli.51-195-235-82.plesk.page/httpdocs/wp-content/themes/bfw/assets/scss/app.scss on line 955, at column 11
+04/03/24 3:13:53: app.scss - parse error: failed at `.video` /var/www/vhosts/bfw.lore.fr/httpdocs/wp-content/themes/bfw/assets/scss/app.scss on line 596, at column 5
+04/03/24 3:14:06: app.scss - parse error: failed at `.video` /var/www/vhosts/bfw.lore.fr/httpdocs/wp-content/themes/bfw/assets/scss/app.scss on line 596, at column 5
+04/03/24 3:25:00: app.scss - parse error: failed at `max-height` /var/www/vhosts/bfw.lore.fr/httpdocs/wp-content/themes/bfw/assets/scss/app.scss on line 2581, at column 5
+05/30/24 3:28:13: /var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/themes/bfw/var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/plugins/WP-SCSS-master/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+05/30/24 3:28:13: /var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/themes/bfw/var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/plugins/WP-SCSS-master/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+05/30/24 3:28:13: /var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/themes/bfw/var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/plugins/WP-SCSS-master/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+05/30/24 3:28:13: /var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/themes/bfw/var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/plugins/WP-SCSS-master/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+05/30/24 3:28:13: /var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/themes/bfw/var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/plugins/WP-SCSS-master/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+05/30/24 3:28:13: /var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/themes/bfw/var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/plugins/WP-SCSS-master/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+05/30/24 3:28:13: /var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/themes/bfw/var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/plugins/WP-SCSS-master/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+05/30/24 3:28:16: /var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/themes/bfw/var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/plugins/WP-SCSS-master/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+05/30/24 3:28:16: /var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/themes/bfw/var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/plugins/WP-SCSS-master/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+05/30/24 3:28:16: /var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/themes/bfw/var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/plugins/WP-SCSS-master/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+05/30/24 3:28:16: /var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/themes/bfw/var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/plugins/WP-SCSS-master/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+05/30/24 3:28:16: /var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/themes/bfw/var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/plugins/WP-SCSS-master/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+05/30/24 3:28:16: /var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/themes/bfw/var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/plugins/WP-SCSS-master/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+05/30/24 3:28:16: /var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/themes/bfw/var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/plugins/WP-SCSS-master/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+05/30/24 3:28:27: /var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/themes/bfw/var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/plugins/WP-SCSS-master/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+05/30/24 3:28:27: /var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/themes/bfw/var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/plugins/WP-SCSS-master/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+05/30/24 3:28:27: /var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/themes/bfw/var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/plugins/WP-SCSS-master/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+05/30/24 3:28:27: /var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/themes/bfw/var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/plugins/WP-SCSS-master/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+05/30/24 3:28:27: /var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/themes/bfw/var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/plugins/WP-SCSS-master/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+05/30/24 3:28:27: /var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/themes/bfw/var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/plugins/WP-SCSS-master/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+05/30/24 3:28:27: /var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/themes/bfw/var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/plugins/WP-SCSS-master/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+05/30/24 3:36:25: app.scss - `./templates/header` file not found for @import: themes/default/app_default.scss on line 8, at column 1
+Call Stack:
+#0 import themes/default/app_default.scss app.scss on line 7
+05/30/24 3:38:26: app.scss - `./templates/header` file not found for @import: themes/default/app_default.scss on line 8, at column 1
+Call Stack:
+#0 import themes/default/app_default.scss app.scss on line 7
+05/30/24 3:40:27: app.scss - `./templates/header` file not found for @import: themes/default/app_default.scss on line 8, at column 1
+Call Stack:
+#0 import themes/default/app_default.scss app.scss on line 7
+05/30/24 3:42:28: app.scss - `./templates/header` file not found for @import: themes/default/app_default.scss on line 8, at column 1
+Call Stack:
+#0 import themes/default/app_default.scss app.scss on line 7
+05/30/24 3:44:29: app.scss - `./templates/header` file not found for @import: themes/default/app_default.scss on line 8, at column 1
+Call Stack:
+#0 import themes/default/app_default.scss app.scss on line 7
+05/30/24 3:58:33: app_tools.scss - Undefined variable $site_breakpoint_sm: app_tools.scss on line 44, at column 3
+05/30/24 3:58:33: app.scss - `app_hn` file not found for @import: app.scss on line 6, at column 1
+05/30/24 4:00:34: app_tools.scss - Undefined variable $site_breakpoint_sm: app_tools.scss on line 44, at column 3
+05/30/24 4:02:35: app_tools.scss - Undefined variable $site_breakpoint_sm: app_tools.scss on line 44, at column 3
+05/30/24 4:04:36: app_tools.scss - Undefined variable $site_breakpoint_sm: app_tools.scss on line 44, at column 3
+05/30/24 4:06:37: app_tools.scss - Undefined variable $site_breakpoint_sm: app_tools.scss on line 44, at column 3
+05/30/24 4:08:38: app_tools.scss - Undefined variable $site_breakpoint_sm: app_tools.scss on line 44, at column 3
+06/05/24 10:16:44: app.scss - parse error: failed at `.header-chiffres__item__content p` /var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/themes/brandflow/assets/scss/app.scss on line 526, at column 5
+06/05/24 10:16:44: app.scss - parse error: failed at `.header-chiffres__item__content p` /var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/themes/brandflow/assets/scss/app.scss on line 526, at column 5
+06/07/24 11:45:38: app_tools.scss - ... has to be after the final argument: failed at `, $duration, $timing-function: cubic-bezier(0.79,0.14,0.15,0.86), $delay: 0s) {` /var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/themes/brandflow/assets/scss/app_tools.scss on line 171, at column 33
+06/07/24 11:45:38: app.scss - ... has to be after the final argument: failed at `, $duration, $timing-function: cubic-bezier(0.79,0.14,0.15,0.86), $delay: 0s) {` /var/www/vhosts/happy-bassi.51-195-235-82.plesk.page/httpdocs/wp-content/themes/brandflow/assets/scss/app_tools.scss on line 171, at column 33
+06/07/24 12:57:54: app.scss - $number: calc(100%) / 3 is not a number.: app.scss on line 617, at column 7

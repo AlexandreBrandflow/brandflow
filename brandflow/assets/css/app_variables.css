@@ -1,0 +1,138 @@
+/*VARIABLES SCSS*/
+/*TAILLES DE BREAKPOINTS RESPONSIVE*/
+/*TABLEAU DES TAILLES DE BREAKPOINTS RESPONSIVE*/
+:root {
+  --base-padding: 16px;
+  --font: "Saans", "Helvetica Neue", Arial, sans-serif;
+  --h-font: "Azeret", "Helvetica Neue", Arial, sans-serif;
+  --mono-font: "Azeret Mono", "Courier New", Courier, monospace;
+  --navtop: 64px;
+  --navtop-scroll: 40px;
+  --footer: 50px;
+  --color-primary: #1B1A7A;
+  --color-primary-cta: #3531E9;
+  --color-secondary: #9D9AEB;
+  --color-ternary: #E0E0FF;
+  --color-transparent: transparent;
+  --color-blue-marine: #232B50;
+  --color-blue-medium: #E0E0FF;
+  --color-blue-light: #F1F6FE;
+  --color-red: #E64943;
+  --color-red-light: #F9D9D8;
+  --color-red-dark: #991920;
+  --color-green-light: #DAFFB5;
+  --color-green: #007644;
+  --color-white: #fff;
+  --color-gray: #81879F;
+  --color-gray-light: #F5F5FE;
+  --base-padding: 24px;
+  --base-transition: cubic-bezier(0.79,0.14,0.15,0.86);
+  --vpd: 36px;
+  --hpd: 24px;
+  --font-xxs: 0.722rem;
+  /* 13px */
+  --font-xs: 0.833rem;
+  /* 15px */
+  --font-s: 0.944rem;
+  /* 17px */
+  --font-regular: 1rem;
+  /* 18px */
+  --font-alt: 1.167rem;
+  /* 21px */
+  --font-medium: 1.333rem;
+  /* 24px */
+  --font-medium-large: 1.556rem;
+  /* 28px */
+  --font-large: 2rem;
+  /* 36px */
+  --font-xl: 2.667rem;
+  /* 48px */
+  --font-xxl: 4.444rem;
+  /* 80px */
+}
+.font-xxs {
+  /* 13px */
+  font-size: var(--font-xxs);
+}
+.font-xs {
+  /* 15px */
+  font-size: var(--font-xs);
+}
+.font-s, .font-s p {
+  /* 17px */
+  font-size: var(--font-s);
+}
+.font-regular {
+  /* 18px */
+  font-size: var(--font-regular);
+}
+.font-alt {
+  /* 21px */
+  font-size: var(--font-alt);
+}
+.font-medium {
+  /* 24px */
+  font-size: var(--font-medium);
+}
+.font-medium-large {
+  /* 28px */
+  font-size: var(--font-medium-large);
+}
+.font-large {
+  /* 36px */
+  font-size: var(--font-large);
+}
+.font-xl {
+  /* 48px */
+  font-size: var(--font-xl);
+}
+.font-xxl {
+  /* 80px */
+  font-size: var(--font-xxl);
+}
+/*MARGINS DE BASE*/
+/*PADDINGS DE BASE*/
+/* TABLEAU DES TAILLES DE MARGES VERTICALES */
+/* TABLEAU DES TAILLES DE MARGES HORIZONTALES */
+/* TABLEAU DES TAILLES DE PADDINGS VERTICALES */
+/* TABLEAU DES TAILLES DE PADDINGS HORIZONTALES */
+@media screen and (min-width: 992px) {
+  :root {
+    --navtop: 104px;
+    --base-padding: 36px;
+    --vpd: 48px;
+    --hpd: 48px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  :root {
+    --vpd: 96px;
+    --hpd: 96px;
+  }
+}
+.br-4 {
+  border-radius: 4px;
+}
+.br-8 {
+  border-radius: 8px;
+}
+.br-16 {
+  border-radius: 16px;
+}
+.br-24 {
+  border-radius: 24px;
+}
+@media screen and (min-width: 992px) {
+  .br-sm-4 {
+    border-radius: 4px;
+  }
+  .br-sm-8 {
+    border-radius: 8px;
+  }
+  .br-sm-16 {
+    border-radius: 16px;
+  }
+  .br-sm-24 {
+    border-radius: 24px;
+  }
+}

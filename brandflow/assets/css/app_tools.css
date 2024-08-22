@@ -1,0 +1,551 @@
+/* ============================================================= DOCUMENTATION */
+/* This files contains the CSS styling for global elements, such as :
+*
+*      - Global settings
+*      - Layout rules (for sections/spaces/alignment/...)
+*      - Titles & text presets
+*      - Flexbox presets
+*      - Lists styling
+*      - Colors presets
+*      - Buttons and anchors presets
+*      - Lazy loading animation
+*/
+/* ============================================================= GLOBAL SETTINGS */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-size: 18px;
+  font-variant-ligatures: none;
+}
+body {
+  background: var(--color-body);
+  font-family: var(--font);
+  color: var(--color-blue-marine);
+  overflow-x: hidden;
+}
+p {
+  line-height: 136%;
+}
+p + p {
+  margin-top: 1.36rem;
+}
+strong {
+  font-weight: 500;
+}
+/* ============================================================= LAYOUT */
+.vpd {
+  padding-top: var(--vpd);
+  padding-bottom: var(--vpd);
+}
+.hpd {
+  padding-left: var(--hpd);
+  padding-right: var(--hpd);
+}
+.full {
+  width: 100%;
+}
+.hbfw {
+  width: 50%;
+}
+.just-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.just-img {
+  object-fit: cover;
+  object-position: center;
+}
+.shadow {
+  box-shadow: 10px 10px 15px -10px rgba(51, 51, 51, 0.1);
+}
+/* ============================================================= LISTS */
+ul.bullet {
+  list-style-type: disc;
+  padding-left: 30px;
+}
+/* ============================================================= COLORS */
+.white {
+  color: #fff;
+}
+.to-white:hover {
+  color: #fff;
+}
+/* ============================================================= BUTTONS AND ANCHORS */
+/* ============================================================= FORM */
+input, textarea {
+  background: none;
+  border: none;
+}
+/* ============================================================= LAZY LOADING */
+img[data-src] {
+  min-height: 200px;
+  background: linear-gradient(180deg, #fff, #C0C0C0, #fff) no-repeat;
+  background-size: 500% 500%;
+  animation: loading 1s infinite linear;
+}
+@keyframes loading {
+  0% {
+    background-position: 50% -50%;
+  }
+  100% {
+    background-position: 50% 150%;
+  }
+}
+.font-h {
+  font-family: var(--h-font);
+}
+.--style-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.--style-primary.btn .svg.type--fill svg path {
+  fill: var(--color-blue-light);
+  transition: fill 0.3s ease;
+}
+.--style-primary.btn .svg.type--outline svg path {
+  stroke: var(--color-blue-light);
+  transition: stroke 0.3s ease;
+}
+.--style-primary.btn:hover {
+  background-color: var(--color-primary-cta);
+  color: var(--color-white);
+}
+.--style-primary.btn:hover .svg.type--fill svg path {
+  fill: var(--color-white);
+}
+.--style-primary.btn:hover .svg.type--outline svg path {
+  stroke: var(--color-white);
+}
+.--style-primarya:visited {
+  color: var(--color-white);
+}
+.--style-primary-cta {
+  background-color: var(--color-primary-cta);
+  color: var(--color-white);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.--style-primary-cta.btn .svg.type--fill svg path {
+  fill: var(--color-blue-light);
+  transition: fill 0.3s ease;
+}
+.--style-primary-cta.btn .svg.type--outline svg path {
+  stroke: var(--color-blue-light);
+  transition: stroke 0.3s ease;
+}
+.--style-primary-cta.btn:hover {
+  background-color: var(--color-primary-cta);
+  color: var(--color-white);
+}
+.--style-primary-cta.btn:hover .svg.type--fill svg path {
+  fill: var(--color-white);
+}
+.--style-primary-cta.btn:hover .svg.type--outline svg path {
+  stroke: var(--color-white);
+}
+.--style-primary-ctaa:visited {
+  color: var(--color-white);
+}
+.--style-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.--style-secondary.btn .svg.type--fill svg path {
+  fill: var(--color-red-light);
+  transition: fill 0.3s ease;
+}
+.--style-secondary.btn .svg.type--outline svg path {
+  stroke: var(--color-red-light);
+  transition: stroke 0.3s ease;
+}
+.--style-secondary.btn:hover {
+  background-color: var(--color-ternary);
+  color: var(--color-primary);
+}
+.--style-secondary.btn:hover .svg.type--fill svg path {
+  fill: var(--color-red-dark);
+}
+.--style-secondary.btn:hover .svg.type--outline svg path {
+  stroke: var(--color-red-dark);
+}
+.--style-secondarya:visited {
+  color: var(--color-white);
+}
+.--style-ternary {
+  background-color: var(--color-ternary);
+  color: var(--color-white);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.--style-ternary.btn .svg.type--fill svg path {
+  fill: var(--color-green-light);
+  transition: fill 0.3s ease;
+}
+.--style-ternary.btn .svg.type--outline svg path {
+  stroke: var(--color-green-light);
+  transition: stroke 0.3s ease;
+}
+.--style-ternary.btn:hover {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+.--style-ternary.btn:hover .svg.type--fill svg path {
+  fill: var(--color-green);
+}
+.--style-ternary.btn:hover .svg.type--outline svg path {
+  stroke: var(--color-green);
+}
+.--style-ternarya:visited {
+  color: var(--color-white);
+}
+.--style-blue-marine {
+  background-color: var(--color-blue-marine);
+  color: var(--color-white);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.--style-blue-marine.btn .svg.type--fill svg path {
+  fill: var(--color-white);
+  transition: fill 0.3s ease;
+}
+.--style-blue-marine.btn .svg.type--outline svg path {
+  stroke: var(--color-white);
+  transition: stroke 0.3s ease;
+}
+.--style-blue-marine.btn:hover {
+  background-color: var(--color-blue-medium);
+  color: var(--color-blue-light);
+}
+.--style-blue-marine.btn:hover .svg.type--fill svg path {
+  fill: var(--color-blue-light);
+}
+.--style-blue-marine.btn:hover .svg.type--outline svg path {
+  stroke: var(--color-blue-light);
+}
+.--style-blue-marinea:visited {
+  color: var(--color-white);
+}
+.--style-blue-light {
+  background-color: var(--color-blue-light);
+  color: var(--color-blue-marine);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.--style-blue-light.btn .svg.type--fill svg path {
+  fill: var(--color-white);
+  transition: fill 0.3s ease;
+}
+.--style-blue-light.btn .svg.type--outline svg path {
+  stroke: var(--color-white);
+  transition: stroke 0.3s ease;
+}
+.--style-blue-light.btn:hover {
+  background-color: var(--color-blue-medium);
+  color: var(--color-white);
+}
+.--style-blue-light.btn:hover .svg.type--fill svg path {
+  fill: var(--color-blue-marine);
+}
+.--style-blue-light.btn:hover .svg.type--outline svg path {
+  stroke: var(--color-blue-marine);
+}
+.--style-blue-lighta:visited {
+  color: var(--color-blue-marine);
+}
+.--style-red-light {
+  background-color: var(--color-red-light);
+  color: var(--color-blue-marine);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.--style-red-light.btn .svg.type--fill svg path {
+  fill: var(--color-white);
+  transition: fill 0.3s ease;
+}
+.--style-red-light.btn .svg.type--outline svg path {
+  stroke: var(--color-white);
+  transition: stroke 0.3s ease;
+}
+.--style-red-light.btn:hover {
+  background-color: var(--color-red-dark);
+  color: var(--color-white);
+}
+.--style-red-light.btn:hover .svg.type--fill svg path {
+  fill: var(--color-blue-marine);
+}
+.--style-red-light.btn:hover .svg.type--outline svg path {
+  stroke: var(--color-blue-marine);
+}
+.--style-red-lighta:visited {
+  color: var(--color-blue-marine);
+}
+.--style-red {
+  background-color: var(--color-red);
+  color: var(--color-blue-marine);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.--style-red.btn .svg.type--fill svg path {
+  fill: var(--color-white);
+  transition: fill 0.3s ease;
+}
+.--style-red.btn .svg.type--outline svg path {
+  stroke: var(--color-white);
+  transition: stroke 0.3s ease;
+}
+.--style-red.btn:hover {
+  background-color: var(--color-red-dark);
+  color: var(--color-white);
+}
+.--style-red.btn:hover .svg.type--fill svg path {
+  fill: var(--color-blue-marine);
+}
+.--style-red.btn:hover .svg.type--outline svg path {
+  stroke: var(--color-blue-marine);
+}
+.--style-reda:visited {
+  color: var(--color-blue-marine);
+}
+.--style-red-dark {
+  background-color: var(--color-red-dark);
+  color: var(--color-blue-marine);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.--style-red-dark.btn .svg.type--fill svg path {
+  fill: var(--color-white);
+  transition: fill 0.3s ease;
+}
+.--style-red-dark.btn .svg.type--outline svg path {
+  stroke: var(--color-white);
+  transition: stroke 0.3s ease;
+}
+.--style-red-dark.btn:hover {
+  background-color: var(--color-red-dark);
+  color: var(--color-white);
+}
+.--style-red-dark.btn:hover .svg.type--fill svg path {
+  fill: var(--color-blue-marine);
+}
+.--style-red-dark.btn:hover .svg.type--outline svg path {
+  stroke: var(--color-blue-marine);
+}
+.--style-red-darka:visited {
+  color: var(--color-blue-marine);
+}
+.--style-green {
+  background-color: var(--color-green);
+  color: var(--color-white);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.--style-green.btn .svg.type--fill svg path {
+  fill: var(--color-blue-light);
+  transition: fill 0.3s ease;
+}
+.--style-green.btn .svg.type--outline svg path {
+  stroke: var(--color-blue-light);
+  transition: stroke 0.3s ease;
+}
+.--style-green.btn:hover {
+  background-color: var(--color-green-light);
+  color: var(--color-primary);
+}
+.--style-green.btn:hover .svg.type--fill svg path {
+  fill: var(--color-blue-marine);
+}
+.--style-green.btn:hover .svg.type--outline svg path {
+  stroke: var(--color-blue-marine);
+}
+.--style-greena:visited {
+  color: var(--color-white);
+}
+.--style-green-light {
+  background-color: var(--color-green-light);
+  color: var(--color-green);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.--style-green-light.btn .svg.type--fill svg path {
+  fill: var(--color-blue-light);
+  transition: fill 0.3s ease;
+}
+.--style-green-light.btn .svg.type--outline svg path {
+  stroke: var(--color-blue-light);
+  transition: stroke 0.3s ease;
+}
+.--style-green-light.btn:hover {
+  background-color: var(--color-green-light);
+  color: var(--color-primary);
+}
+.--style-green-light.btn:hover .svg.type--fill svg path {
+  fill: var(--color-blue-marine);
+}
+.--style-green-light.btn:hover .svg.type--outline svg path {
+  stroke: var(--color-blue-marine);
+}
+.--style-green-lighta:visited {
+  color: var(--color-green);
+}
+.--style-white {
+  background-color: var(--color-white);
+  color: var(--color-blue-marine);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.--style-white.btn .svg.type--fill svg path {
+  fill: var(--color-blue-marine);
+  transition: fill 0.3s ease;
+}
+.--style-white.btn .svg.type--outline svg path {
+  stroke: var(--color-blue-marine);
+  transition: stroke 0.3s ease;
+}
+.--style-white.btn:hover {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+.--style-white.btn:hover .svg.type--fill svg path {
+  fill: var(--color-blue-light);
+}
+.--style-white.btn:hover .svg.type--outline svg path {
+  stroke: var(--color-blue-light);
+}
+.--style-whitea:visited {
+  color: var(--color-blue-marine);
+}
+.--style-transparent {
+  background-color: transparent;
+  color: var(--color-blue-marine);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.--style-transparent.btn .svg.type--fill svg path {
+  fill: var(--color-blue-marine);
+  transition: fill 0.3s ease;
+}
+.--style-transparent.btn .svg.type--outline svg path {
+  stroke: var(--color-blue-marine);
+  transition: stroke 0.3s ease;
+}
+.--style-transparent.btn:hover {
+  background-color: var(--color-white);
+  color: var(--color-blue-marine);
+}
+.--style-transparent.btn:hover .svg.type--fill svg path {
+  fill: var(--color-blue-marine);
+}
+.--style-transparent.btn:hover .svg.type--outline svg path {
+  stroke: var(--color-blue-marine);
+}
+.--style-transparenta:visited {
+  color: var(--color-blue-marine);
+}
+.--style-gray-light {
+  background-color: var(--color-gray-light);
+  color: var(--color-blue-marine);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.--style-gray-light.btn .svg.type--fill svg path {
+  fill: var(--color-blue-marine);
+  transition: fill 0.3s ease;
+}
+.--style-gray-light.btn .svg.type--outline svg path {
+  stroke: var(--color-blue-marine);
+  transition: stroke 0.3s ease;
+}
+.--style-gray-light.btn:hover {
+  background-color: var(--color-blue-light);
+  color: var(--color-blue-marine);
+}
+.--style-gray-light.btn:hover .svg.type--fill svg path {
+  fill: var(--color-blue-marine);
+}
+.--style-gray-light.btn:hover .svg.type--outline svg path {
+  stroke: var(--color-blue-marine);
+}
+.--style-gray-lighta:visited {
+  color: var(--color-blue-marine);
+}
+.color-primary {
+  color: var(--color-primary);
+}
+.color-primary-cta {
+  color: var(--color-primary-cta);
+}
+.color-secondary {
+  color: var(--color-secondary);
+}
+.color-ternary {
+  color: var(--color-ternary);
+}
+.color-transparent {
+  color: transparent;
+}
+.color-blue-marine {
+  color: var(--color-blue-marine);
+}
+.color-blue-medium {
+  color: var(--color-blue-medium);
+}
+.color-blue-light {
+  color: var(--color-blue-light);
+}
+.color-red-light {
+  color: var(--color-red-light);
+}
+.color-red {
+  color: var(--color-red);
+}
+.color-red-dark {
+  color: var(--color-red-dark);
+}
+.color-green-light {
+  color: var(--color-green-light);
+}
+.color-green {
+  color: var(--color-green);
+}
+.color-white {
+  color: var(--color-white);
+}
+.color-gray {
+  color: var(--color-gray);
+}
+.--svg-style-primary path {
+  fill: var(--color-primary);
+}
+.--svg-style-primary-cta path {
+  fill: var(--color-primary-cta);
+}
+.--svg-style-secondary path {
+  fill: var(--color-secondary);
+}
+.--svg-style-ternary path {
+  fill: var(--color-ternary);
+}
+.--svg-style-transparent path {
+  fill: transparent;
+}
+.--svg-style-blue-marine path {
+  fill: var(--color-blue-marine);
+}
+.--svg-style-blue-medium path {
+  fill: var(--color-blue-medium);
+}
+.--svg-style-blue-light path {
+  fill: var(--color-blue-light);
+}
+.--svg-style-red-light path {
+  fill: var(--color-red-light);
+}
+.--svg-style-red path {
+  fill: var(--color-red);
+}
+.--svg-style-red-dark path {
+  fill: var(--color-red-dark);
+}
+.--svg-style-green-light path {
+  fill: var(--color-green-light);
+}
+.--svg-style-green path {
+  fill: var(--color-green);
+}
+.--svg-style-white path {
+  fill: var(--color-white);
+}
+.--svg-style-gray path {
+  fill: var(--color-gray);
+}

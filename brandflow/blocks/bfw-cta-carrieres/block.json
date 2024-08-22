@@ -1,0 +1,12 @@
+{
+    "name": "acf/bfw-cta-carrieres",
+    "title": "bfw-cta-carrieres",
+    "description": "",
+    "category": "text",
+    "icon": "admin-comments",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "bfw-cta-carrieres.php"
+    },
+    "align": "full"
+}

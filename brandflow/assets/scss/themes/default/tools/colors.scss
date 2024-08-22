@@ -1,0 +1,7 @@
+
+@each $key, $color in $colors {
+  .has-#{$key}-color { color: $color; }
+  .has-#{$key}-background-color { background-color: $color; }
+  .text-#{$key} { color: $color; }
+  .bg-#{$key} { background-color: $color; }
+}

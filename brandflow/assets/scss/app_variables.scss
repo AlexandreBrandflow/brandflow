@@ -1,0 +1,349 @@
+/*VARIABLES SCSS*/
+
+/*TAILLES DE BREAKPOINTS RESPONSIVE*/
+$site_breakpoint_xs: 375px;
+$site_breakpoint_sm: 768px;
+$site_breakpoint_md: 992px;
+$site_breakpoint_lg: 1200px;
+$site_breakpoint_xl: 1800px;
+//TODO: Prendre en charge le xxl ?
+
+/*TABLEAU DES TAILLES DE BREAKPOINTS RESPONSIVE*/
+$breakpoints: (
+  "xs": $site_breakpoint_xs,
+  "sm": $site_breakpoint_sm,
+  "md": $site_breakpoint_md,
+  "lg": $site_breakpoint_lg,
+  "xl": $site_breakpoint_xl,
+);
+
+
+:root {
+  --base-padding: 16px;
+
+  --font: 'Saans', 'Helvetica Neue', Arial, sans-serif;
+  --h-font: 'Azeret', 'Helvetica Neue', Arial, sans-serif;
+  --mono-font: 'Azeret Mono', 'Courier New', Courier, monospace;
+
+
+  --navtop: 64px;
+  --navtop-scroll: 40px;
+  --footer: 50px;
+
+  --color-primary: #1B1A7A;
+  --color-primary-cta: #3531E9;
+  --color-secondary: #9D9AEB;
+  --color-ternary: #E0E0FF;
+  --color-transparent: transparent;
+  --color-blue-marine: #232B50;
+  --color-blue-medium: #E0E0FF;
+  --color-blue-light: #F1F6FE;
+  --color-red: #E64943;
+  --color-red-light: #F9D9D8;
+  --color-red-dark: #991920;
+  --color-green-light: #DAFFB5;
+  --color-green: #007644;
+  --color-white: #fff;
+  --color-gray: #81879F;
+  --color-gray-light: #F5F5FE;
+
+  --base-padding: 24px;
+
+  --base-transition: cubic-bezier(0.79, 0.14, 0.15, 0.86);
+
+
+  --vpd: 36px;
+  --hpd: 24px;
+
+  --font-xxs: 0.722rem;
+  /* 13px */
+  --font-xs: 0.833rem;
+  /* 15px */
+  --font-s: 0.944rem;
+  /* 17px */
+  --font-regular: 1rem;
+  /* 18px */
+
+  // mobile
+
+  --font-alt: 1.083rem;
+  /* 21px */
+  --font-medium: 1.167rem;
+  /* 24px */
+  --font-medium-large: 1.333rem;
+  /* 28px */
+  --font-large: 1.556rem;
+  /* 36px */
+  --font-xl: 2rem;
+  /* 48px */
+  --font-xxl: 2.667rem;
+  /* 80px */
+
+  // desktop
+
+  @media screen and (min-width: $site_breakpoint_sm) {
+    --font-alt: 1.167rem;
+    /* 21px */
+    --font-medium: 1.333rem;
+    /* 24px */
+    --font-medium-large: 1.556rem;
+    /* 28px */
+    --font-large: 2rem;
+    /* 36px */
+    --font-xl: 2.667rem;
+    /* 48px */
+    --font-xxl: 4.444rem;
+    /* 80px */
+  }
+}
+
+.font-xxs {
+  /* 13px */
+  font-size: var(--font-xxs);
+}
+
+.font-xs {
+  /* 15px */
+  font-size: var(--font-xs);
+}
+
+.font-s,
+.font-s p {
+  /* 17px */
+  font-size: var(--font-s);
+}
+
+.font-regular {
+  /* 18px */
+  font-size: var(--font-regular);
+}
+
+.font-alt {
+  /* 21px */
+  font-size: var(--font-alt);
+}
+
+.font-medium {
+  /* 24px */
+  font-size: var(--font-medium);
+}
+
+.font-medium-large {
+  /* 28px */
+  font-size: var(--font-medium-large);
+}
+
+.font-large {
+  /* 36px */
+  font-size: var(--font-large);
+}
+
+.font-xl {
+  /* 48px */
+  font-size: var(--font-xl);
+}
+
+.font-xxl {
+  /* 80px */
+  font-size: var(--font-xxl);
+}
+
+.font-title {
+  font-family: var(--h-font);
+}
+
+.font-body {
+  font-family: var(--font);
+}
+
+.font-mono {
+  font-family: var(--mono-font);
+}
+
+
+
+
+/*MARGINS DE BASE*/
+$base_margin_x: 16px;
+$base_margin_y: 16px;
+
+/*PADDINGS DE BASE*/
+$base_padding_x: 16px;
+$base_padding_y: 16px;
+
+
+/* TABLEAU DES TAILLES DE MARGES VERTICALES */
+$margin_vertical_sizes: (
+  "0": 0,
+  "1": $base_margin_y / 2,
+  "2": $base_margin_y,
+  "25": $base_margin_y * 1.5,
+  "3": $base_margin_y * 2,
+  "35": $base_margin_y * 2.5,
+  "4": $base_margin_y * 3,
+  "45": $base_margin_y * 3.5,
+  "5": $base_margin_y * 4,
+  "55": $base_margin_y * 4.5,
+  "6": $base_margin_y * 5,
+  "65": $base_margin_y * 5.5,
+  "7": $base_margin_y * 6,
+  "75": $base_margin_y * 6.5,
+  "8": $base_margin_y * 7,
+  "85": $base_margin_y * 7.5,
+  "9": $base_margin_y * 8,
+  "95": $base_margin_y * 8.5,
+  "10": $base_margin_y * 9,
+  "105": $base_margin_y * 9.5,
+  "11": $base_margin_y * 10,
+  "115": $base_margin_y * 10.5,
+  "12": $base_margin_y * 11,
+  "125": $base_margin_y * 11.5,
+  "13": $base_margin_y * 12,
+  "135": $base_margin_y * 12.5,
+  "14": $base_margin_y * 13,
+  "145": $base_margin_y * 13.5,
+  "15": $base_margin_y * 14,
+  'auto': auto
+);
+
+/* TABLEAU DES TAILLES DE MARGES HORIZONTALES */
+$margin_horizontal_sizes: (
+  "0": 0,
+  "1": $base_margin_x / 2,
+  "2": $base_margin_x,
+  "25": $base_margin_x * 1.5,
+  "3": $base_margin_x * 2,
+  "35": $base_margin_x * 2.5,
+  "4": $base_margin_x * 3,
+  "45": $base_margin_x * 3.5,
+  "5": $base_margin_x * 4,
+  "55": $base_margin_x * 4.5,
+  "6": $base_margin_x * 5,
+  "65": $base_margin_x * 5.5,
+  "7": $base_margin_x * 6,
+  "75": $base_margin_x * 6.5,
+  "8": $base_margin_x * 7,
+  "85": $base_margin_x * 7.5,
+  "9": $base_margin_x * 8,
+  "95": $base_margin_x * 8.5,
+  "10": $base_margin_x * 9,
+  "105": $base_margin_x * 9.5,
+  "11": $base_margin_x * 10,
+  "115": $base_margin_x * 10.5,
+  "12": $base_margin_x * 11,
+  "125": $base_margin_x * 11.5,
+  "13": $base_margin_x * 12,
+  "135": $base_margin_x * 12.5,
+  "14": $base_margin_x * 13,
+  "145": $base_margin_x * 13.5,
+  "15": $base_margin_x * 14,
+  'auto': auto
+);
+
+/* TABLEAU DES TAILLES DE PADDINGS VERTICALES */
+$padding_vertical_sizes: (
+  "0": 0,
+  "1": $base_padding_y / 2,
+  "15": $base_padding_y / 1.5,
+  "2": $base_padding_y,
+  "25": $base_padding_y * 1.5,
+  "3": $base_padding_y * 2,
+  "35": $base_padding_y * 2.5,
+  "4": $base_padding_y * 3,
+  "45": $base_padding_y * 3.5,
+  "5": $base_padding_y * 4,
+  "55": $base_padding_y * 4.5,
+  "6": $base_padding_y * 5,
+  "65": $base_padding_y * 5.5,
+  "7": $base_padding_y * 6,
+  "75": $base_padding_y * 6.5,
+  "8": $base_padding_y * 7,
+  "85": $base_padding_y * 7.5,
+  "9": $base_padding_y * 8,
+  "95": $base_padding_y * 8.5,
+  "10": $base_padding_y * 9,
+  "105": $base_padding_y * 9.5,
+  "11": $base_padding_y * 10,
+  "115": $base_padding_y * 10.5,
+  "12": $base_padding_y * 11,
+  "125": $base_padding_y * 11.5,
+  "13": $base_padding_y * 12,
+  "135": $base_padding_y * 12.5,
+  "14": $base_padding_y * 13,
+  "145": $base_padding_y * 13.5,
+  "15": $base_padding_y * 14,
+);
+
+/* TABLEAU DES TAILLES DE PADDINGS HORIZONTALES */
+$padding_horizontal_sizes: (
+  "0": 0,
+  "1": $base_padding_x / 2,
+  "15": $base_padding_x / 1.5,
+  "2": $base_padding_x,
+  "25": $base_padding_x * 1.5,
+  "3": $base_padding_x * 2,
+  "35": $base_padding_x * 2.5,
+  "4": $base_padding_x * 3,
+  "45": $base_padding_x * 3.5,
+  "5": $base_padding_x * 4,
+  "55": $base_padding_x * 4.5,
+  "6": $base_padding_x * 5,
+  "65": $base_padding_x * 5.5,
+  "7": $base_padding_x * 6,
+  "75": $base_padding_x * 6.5,
+  "8": $base_padding_x * 7,
+  "85": $base_padding_x * 7.5,
+  "9": $base_padding_x * 8,
+  "95": $base_padding_x * 8.5,
+  "10": $base_padding_x * 9,
+  "105": $base_padding_x * 9.5,
+  "11": $base_padding_x * 10,
+  "115": $base_padding_x * 10.5,
+  "12": $base_padding_x * 11,
+  "125": $base_padding_x * 11.5,
+  "13": $base_padding_x * 12,
+  "135": $base_padding_x * 12.5,
+  "14": $base_padding_x * 13,
+  "145": $base_padding_x * 13.5,
+  "15": $base_padding_x * 14,
+);
+
+
+
+@media screen and (min-width: $site_breakpoint_md) {
+
+  :root {
+    --navtop: 104px;
+    --base-padding: 36px;
+    --vpd: 48px;
+    --hpd: 48px;
+  }
+}
+
+@media screen and (min-width: $site_breakpoint_lg) {
+
+  :root {
+    --vpd: 96px;
+    --hpd: 96px;
+  }
+
+}
+
+
+// border radius etc
+
+$border-radius-values: 4, 8, 12, 16, 24, 28, 32, 36, 40, 48;
+
+@each $value in $border-radius-values {
+  .br-#{$value} {
+    border-radius: #{$value}px;
+    overflow: hidden;
+  }
+
+  @media (min-width: $site_breakpoint_sm) {
+    .br-sm-#{$value} {
+      border-radius: #{$value}px;
+      overflow: hidden;
+    }
+  }
+}

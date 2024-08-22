@@ -1,0 +1,12 @@
+{
+    "name": "acf/bfw-header-chiffres",
+    "title": "bfw-header-chiffres",
+    "description": "",
+    "category": "text",
+    "icon": "admin-comments",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "bfw-header-chiffres.php"
+    },
+    "align": "full"
+}

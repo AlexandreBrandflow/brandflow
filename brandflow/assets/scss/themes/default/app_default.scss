@@ -1,0 +1,35 @@
+// HTML TAGS
+@import './tags/a';
+@import './tags/h';
+@import './tags/img';
+@import './tags/p';
+
+// WORDPRESS GUTEMBERG BLOCKS
+@import './components/wp-block-columns';
+@import './components/wp-block-pullquote';
+@import './components/wp-block-quote';
+@import './components/wp-block-image';
+@import './components/wp-block-gallery';
+@import './components/wp-block-cover';
+@import './components/wp-block-buttons';
+@import './components/wp-block-categories-list';
+@import './components/wp-block-embed';
+@import './components/wp-block-latest-posts__list';
+@import './components/wp-block-media-text';
+@import './components/wp-block-search';
+@import './components/wp-block-social-links';
+@import './components/wp-block-table';
+@import './components/wp-block-spacer';
+
+@import "./tools/flex";
+@import "./tools/colors";
+@import "./tools/buttons";
+@import "./tools/margins";
+@import "./tools/paddings";
+@import "./tools/borders";
+@import "./tools/text";
+@import "./tools/display";
+@import "./tools/width";
+@import "./tools/height";
+@import "./tools/img";
+@import "./tools/positions";

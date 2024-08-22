@@ -1,0 +1,23 @@
+.display-none { display: none; }
+.display-flex, .fx { display: flex; }
+.display-inline-flex{ display: inline-flex; }
+.display-block { display: block; }
+.display-inline-block { display: inline-block; }
+.display-inline { display: inline; }
+.display-contents { display: contents; }
+
+@each $breakpoint_name, $breakpoint_size in $breakpoints {
+
+  @media screen and (min-width: $breakpoint_size) {
+
+    .display-none-#{$breakpoint_name} { display: none; }
+    .display-inline-flex-#{$breakpoint_name} { display: inline-flex; }
+    .display-flex-#{$breakpoint_name}, .fx-#{$breakpoint_name} { display: flex; }
+    .display-block-#{$breakpoint_name} { display: block; }
+    .display-inline-block-#{$breakpoint_name} { display: inline-block; }
+    .display-inline-#{$breakpoint_name} { display: inline; }
+    .display-contents-#{$breakpoint_name} { display: contents; }
+
+  }
+
+}

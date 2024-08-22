@@ -1,0 +1,16 @@
+//HAMBURGERS
+$hamburger-padding-x: 0px !default;
+$hamburger-padding-y: 0px !default;
+$hamburger-layer-width: 20px !default;
+$hamburger-layer-height: 2px !default;
+$hamburger-layer-spacing: 3px !default;
+$hamburger-layer-color: var(--color-primary) !default;
+$hamburger-layer-border-radius: 4px !default;
+$hamburger-hover-opacity: 1 !default;
+$hamburger-active-layer-color: $hamburger-layer-color !default;
+$hamburger-active-hover-opacity: $hamburger-hover-opacity !default;
+$hamburger-hover-use-filter: false !default;
+$hamburger-hover-filter: opacity(100%) !default;
+$hamburger-active-hover-filter: $hamburger-hover-filter !default;
+
+@import "../../libs/hamburgers/_sass/hamburgers/hamburgers";

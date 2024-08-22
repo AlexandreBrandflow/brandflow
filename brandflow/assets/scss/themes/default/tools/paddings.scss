@@ -1,0 +1,31 @@
+@each $name, $size in $padding_vertical_sizes {
+  .py-#{$name} { padding-top: $size; padding-bottom: $size; }
+  .pt-#{$name} { padding-top: $size; }
+  .pb-#{$name} { padding-bottom: $size; }
+}
+
+@each $name, $size in $padding_horizontal_sizes {
+  .px-#{$name} { padding-left: $size; padding-right: $size; }
+  .pl-#{$name} { padding-left: $size; }
+  .pr-#{$name} { padding-right: $size; }
+}
+
+@each $breakpoint_name, $breakpoint_size in $breakpoints {
+
+  @media screen and (min-width: $breakpoint_size) {
+
+    @each $name, $size in $padding_vertical_sizes {
+      .py-#{$breakpoint_name}-#{$name} { padding-top: $size; padding-bottom: $size; }
+      .pt-#{$breakpoint_name}-#{$name} { padding-top: $size; }
+      .pb-#{$breakpoint_name}-#{$name} { padding-bottom: $size; }
+    }
+
+    @each $name, $size in $padding_horizontal_sizes {
+      .px-#{$breakpoint_name}-#{$name} { padding-left: $size; padding-right: $size; }
+      .pl-#{$breakpoint_name}-#{$name} { padding-left: $size; }
+      .pr-#{$breakpoint_name}-#{$name} { padding-right: $size; }
+    }
+
+  }
+
+}

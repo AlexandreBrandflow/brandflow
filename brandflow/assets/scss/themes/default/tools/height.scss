@@ -1,0 +1,35 @@
+$heights: (
+  '10': 10%,
+  '20': 20%,
+  '25': 25%,
+  '30': 30%,
+  '33': 33.33%,
+  '40': 40%,
+  '50': 50%,
+  '66': 66.66%,
+  '70': 70%,
+  '75': 75%,
+  '80': 80%,
+  '90': 90%,
+  '100': 100%
+);
+
+@each $height_name, $height in $heights {
+  .h-#{$height_name} { height: $height; }
+  .h-max-#{$height_name} { max-height: $height; }
+  .h-min-#{$height_name} { min-height: $height; }
+}
+
+@each $breakpoint_name, $breakpoint_size in $breakpoints {
+
+  @media screen and (min-height: $breakpoint_size) {
+
+    @each $height_name, $height in $heights {
+      .h-#{$breakpoint_name}-#{$height_name} { height: $height; }
+      .h-max-#{$breakpoint_name}-#{$height_name} { max-height: $height; }
+      .h-min-#{$breakpoint_name}-#{$height_name} { min-height: $height; }
+    }
+
+  }
+
+}

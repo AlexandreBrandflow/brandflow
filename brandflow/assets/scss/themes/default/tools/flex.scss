@@ -1,0 +1,103 @@
+// la classe fx a été déplacée dans le fichier display.scss
+
+.fx-row { flex-direction: row; }
+.fx-col { flex-direction: column; display: flex; }
+
+
+.fx-wrap { flex-wrap: wrap; }
+
+.just-center { justify-content: center; }
+.just-end { justify-content: flex-end; }
+.just-start { justify-content: flex-start; }
+.just-around { justify-content: space-around; }
+.just-between { justify-content: space-between; }
+
+.al-center { align-items: center; }
+.al-end { align-items: flex-end; }
+.al-start { align-items: flex-start; }
+
+.flex-1 { flex: 1; }
+.flex-50 { flex: 0 0 50%; }
+.flex-33 { flex: 0 0 33.33%; }
+.flex-33 { flex: 0 0 40%; }
+.flex-25 { flex: 0 0 25%; }
+.flex-20 { flex: 0 0 20%; }
+
+
+@for $i from 1 through 10 {
+  .fx-order-#{$i} {
+    order: $i;
+  }
+}
+
+@each $breakpoint_name, $breakpoint_size in $breakpoints {
+
+  @media screen and (min-width: $breakpoint_size) {
+
+    .fx-#{$breakpoint_name}-row { flex-direction: row; }
+    .fx-#{$breakpoint_name}-col { flex-direction: column; }
+
+    .flex-#{$breakpoint_name}-1 { flex: 1; }
+    .flex-#{$breakpoint_name}-50 { flex: 0 0 50%; }
+    .flex-#{$breakpoint_name}-33 { flex: 0 0 33.33%; }
+    .flex-#{$breakpoint_name}-25 { flex: 0 0 25%; }
+    .flex-#{$breakpoint_name}-20 { flex: 0 0 20%; }
+
+    .fx-#{$breakpoint_name}-wrap { flex-wrap: wrap; }
+
+    .fx-#{$breakpoint_name}-nowrap { flex-wrap: nowrap; }
+
+    .just-#{$breakpoint_name}-center { justify-content: center; }
+    .just-#{$breakpoint_name}-end { justify-content: flex-end; }
+    .just-#{$breakpoint_name}-start { justify-content: flex-start; }
+    .just-#{$breakpoint_name}-around { justify-content: space-around; }
+    .just-#{$breakpoint_name}-between { justify-content: space-between; }
+
+    .al-#{$breakpoint_name}-center { align-items: center; }
+    .al-#{$breakpoint_name}-end { align-items: flex-end; }
+    .al-#{$breakpoint_name}-start { align-items: flex-start; }
+
+    @for $i from 1 through 10 {
+      .fx-#{$breakpoint_name}-order-#{$i} {
+        order: $i;
+      }
+    }
+  }
+}
+
+// Génération des classes pour les gaps verticaux et horizontaux combinés
+@each $v_name, $v_size in $margin_vertical_sizes {
+  @each $h_name, $h_size in $margin_horizontal_sizes {
+    .gap-#{$v_name}-#{$h_name} {
+      row-gap: $v_size;
+      column-gap: $h_size;
+    }
+  }
+}
+
+// Génération des classes pour les gaps simples
+@each $name, $size in $margin_vertical_sizes {
+  .gap-#{$name} {
+    gap: $size;
+  }
+}
+
+// Génération des classes pour les gaps responsives verticaux et horizontaux combinés
+@each $breakpoint_name, $breakpoint_size in $breakpoints {
+  @media screen and (min-width: $breakpoint_size) {
+    @each $v_name, $v_size in $margin_vertical_sizes {
+      @each $h_name, $h_size in $margin_horizontal_sizes {
+        .gap-#{$breakpoint_name}-#{$v_name}-#{$h_name} {
+          row-gap: $v_size;
+          column-gap: $h_size;
+        }
+      }
+    }
+    // Génération des classes pour les gaps simples responsives
+    @each $name, $size in $margin_vertical_sizes {
+      .gap-#{$breakpoint_name}-#{$name} {
+        gap: $size;
+      }
+    }
+  }
+}

@@ -1,0 +1,246 @@
+
+// modal & body focus
+
+#overlay
+{
+  pointer-events: none;
+  opacity: 0;
+  position: fixed;
+  top: 100%;
+  left: 0;
+  z-index: 2;
+  background: #1a1a1a;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.4s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+}
+body.focus
+{
+  overflow-y: hidden;
+  
+  #overlay
+  {
+    top: 0;
+    pointer-events: all;
+    opacity: .7;
+  }
+}
+
+.modal
+{
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  transform: translateX(101%);
+  z-index: 150;
+  right: 0;
+  width: 745px;
+  max-width: 100%;
+  height: 100%;
+  display:flex;
+  align-items:flex-start;
+  z-index: 999;
+  background: var(--color-primary-alt);
+  .modal-bloc, .close
+  {
+    opacity: 0;
+  }
+  .modal-bloc
+  {
+    width: 100%;
+    
+    border: 1px solid #ddd;
+    height: 100%;
+    overflow: auto;
+
+    &:after
+    {
+      content: '';
+      position: absolute;
+      right: 0; top: 0;
+      display: inline-flex;
+      opacity: 0.06;
+      width: 100%;
+      height: 100%;
+      margin-left: 0.6rem;
+      background-image: url(../img/logo_gradient.svg);
+      background-repeat: no-repeat;
+      background-size: 120% 125%;
+      background-position: right center;
+      z-index: 0;
+    }
+  }
+  .close
+  {
+    order: 2;
+    display:inline-flex;
+    gap:.4rem;
+    justify-content:center;
+    align-items:center;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: -.008rem;
+    font-size: .7rem;
+    font-weight: 600;
+    opacity:0 ;
+    backface-visibility: hidden;
+    transform: rotate(0deg);
+    &:before
+    {
+      backface-visibility: hidden;
+      transition: 0.4s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+      content:'';
+      display: inline-flex;
+      width:.8rem;
+      height: .75rem;
+      background-image:url('../img/croix-gray.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    &:hover
+    {
+      color: var(--color-black);
+    }
+  }
+
+  .modal-inner
+  {
+    position: relative;
+    z-index: 2;
+  }
+
+  &.active
+  {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateX(0);
+    display: flex;
+    .modal-bloc, .close
+    {
+      opacity: 1;
+    }
+  }
+
+  h3{
+    font-size: 1.8rem;
+    span
+    {
+      color:var(--color-primary)
+    }
+  }
+
+  &--contact-bfw
+  {
+    .hs-form-private
+    {
+      // .form-columns-1
+      // {
+      //   &:nth-child(9)
+      //   {
+      //     //display:none !important;
+      //   }
+      //   &:nth-child(10)
+      //   {
+      //     //display:none !important;
+      //   }
+      //   &:nth-child(11)
+      //   {
+      //     display:none !important;
+      //   }
+      //   &:nth-child(12)
+      //   {
+      //     display:none !important;
+      //   }
+      //   &:nth-child(13)
+      //   {
+      //     display:none !important;
+      //   }
+      // }
+    }
+  }
+  &--center
+  {
+    height: auto;
+    top: 50%;
+    left: 50%;
+    display: none;
+    transform: translate(-40%, -50%);
+    &.active
+    {
+      display: block;
+      transform: translate(-50%, -50%);
+    }
+    
+    
+  }
+  &--video
+  {
+    
+    .close
+    {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 3  ;
+      svg
+      {
+
+      }
+    }
+    .bfw-play
+    {
+      transition: all 0.4s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+      -webkit-backdrop-filter: blur(30px);
+      backdrop-filter: blur(30px);
+      background: #e5e5e538;
+      border-radius: 100%;
+      height: 80px;
+      width: 80px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) scale(0.8);
+      cursor: pointer;
+      z-index: 3;
+      svg
+      {
+        width: 50%;
+        height: 50%;
+        path
+        {}
+      }
+    }
+    .bfw-video-container
+    {
+      width: 100%;
+      height: 100%;
+      video
+      {
+        cursor: pointer;
+        width: 100%;
+        height: auto;
+        margin-bottom: -4px;
+      }
+      &.active 
+      {
+        .bfw-play
+        {
+          display: none;
+        } 
+      }
+    }
+    .modal-bloc
+    {
+      &:after
+      {
+        content:none;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.bfw-grid {
+    // define columns
+    $grid-columns: 12;
+    $grid-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat($grid-columns, [col-start] 1fr);
+    gap: $grid-gap;
+
+    // >div {
+    //     grid-column: col-start / span 12;
+    // }
+
+
+    @each $breakpoint_name, $breakpoint_size in $breakpoints {
+        @media screen and (min-width: $breakpoint_size) {
+            @for $i from 1 through $grid-columns {
+                .col-#{$breakpoint_name}-#{$i} {
+                    grid-column: auto/span #{$i};
+                }
+            }
+        }
+    }
+
+
+
+    @each $breakpoint_name, $breakpoint_size in $breakpoints {
+        @media screen and (min-width: $breakpoint_size) {
+            @for $i from 1 through $grid-columns {
+                .start-#{$breakpoint_name}-#{$i} {
+                    grid-column-start: #{$i};
+                }
+            }
+        }
+    }
+
+}

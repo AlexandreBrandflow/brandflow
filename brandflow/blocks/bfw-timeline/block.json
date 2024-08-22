@@ -1,0 +1,12 @@
+{
+    "name": "acf/bfw-timeline",
+    "title": "bfw-timeline",
+    "description": "",
+    "category": "text",
+    "icon": "admin-comments",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "bfw-timeline.php"
+    },
+    "align": "full"
+}

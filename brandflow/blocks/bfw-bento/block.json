@@ -1,0 +1,12 @@
+{
+    "name": "acf/bfw-bento",
+    "title": "bfw-bento",
+    "description": "",
+    "category": "text",
+    "icon": "admin-comments",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "bfw-bento.php"
+    },
+    "align": "full"
+}

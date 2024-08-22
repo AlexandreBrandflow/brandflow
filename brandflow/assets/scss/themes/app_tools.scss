@@ -1,0 +1,125 @@
+/* ============================================================= DOCUMENTATION */
+
+/* This files contains the CSS styling for global elements, such as :
+*
+*      - Global settings
+*      - Layout rules (for sections/spaces/alignment/...)
+*      - Titles & text presets
+*      - Flexbox presets
+*      - Lists styling
+*      - Colors presets
+*      - Buttons and anchors presets
+*      - Lazy loading animation
+*/
+
+/* ============================================================= GLOBAL SETTINGS */
+
+body {
+  font-family: var(--font);
+  color: #1a1a1a;
+}
+
+/* ============================================================= LAYOUT */
+
+.vpd {padding-top: var(--vpd); padding-bottom: var(--vpd)}
+.hpd {padding-left: var(--hpd); padding-right: var(--hpd)}
+
+.full {width: 100%}
+.hbfw {width: 50%}
+
+.p-rel {position: relative}
+.p-abs {position: absolute}
+
+.just-bg {background-size: cover; background-position: center; background-repeat: no-repeat}
+.just-img {object-fit: cover; object-position: center}
+
+.shadow {box-shadow: 10px 10px 15px -10px rgba(51,51,51,0.1)}
+
+/* ============================================================= TITLES & TEXT */
+
+h1, h2, h3 {font-family: var(--h-font)}
+
+h1, .h1 {}
+h2, .h2 {}
+h3, .h3 {}
+
+.text-center {text-align: center}
+
+/* ============================================================= FLEX PRESETS */
+
+.fx, .fx-col,
+.fx-2, .fx-3, .fx-4, .fx-5,
+.card-2, .card-3, .card-4, .card-5
+{display: flex}
+
+.fx-col {flex-direction: column}
+
+.just-center {justify-content: center}
+.just-end {justify-content: flex-end}
+.just-start {justify-content: flex-start}
+.just-around {justify-content: space-around}
+.just-between, .card-2, .card-3, .card-4, .card-5 {justify-content: space-between}
+
+.al-center {align-items: center}
+.al-end {align-items: flex-end}
+.al-start {align-items: flex-start}
+
+.wrap,
+.fx-2, .fx-3, .fx-4, .fx-5,
+.card-2, .card-3, .card-4, .card-5
+{flex-wrap: wrap}
+
+/* ============================================================= LISTS */
+
+ul.bullet {
+  list-style-type: disc;
+  padding-left: 30px;
+}
+
+/* ============================================================= COLORS */
+
+.white {color: #fff}
+
+.to-white:hover {color: #fff}
+
+/* ============================================================= BUTTONS AND ANCHORS */
+
+button, a {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn-class {
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: 0;
+}
+
+.btn-class {color: #fff; background: #333}
+.btn-class:hover {background: #666}
+
+/* ============================================================= FORM */
+
+input, textarea {
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #333;
+}
+
+/* ============================================================= LAZY LOADING */
+
+img[data-src] {
+  min-height: 200px;
+  background: linear-gradient(180deg, #fff, #C0C0C0, #fff) no-repeat;
+  background-size: 500% 500%;
+  animation: loading 1s infinite linear;
+  font: 300 12px/1.5 var(--font);
+}
+
+@keyframes loading {
+  0%   {background-position: 50% -50%}
+  100% {background-position: 50% 150%}
+}

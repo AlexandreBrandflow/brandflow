@@ -1,0 +1,12 @@
+{
+    "name": "acf/bfw-grid-plus-sticky-slider",
+    "title": "bfw-grid-plus-sticky-slider",
+    "description": "",
+    "category": "text",
+    "icon": "admin-comments",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "bfw-grid-plus-sticky-slider.php"
+    },
+    "align": "full"
+}

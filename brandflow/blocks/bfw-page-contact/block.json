@@ -1,0 +1,12 @@
+{
+    "name": "acf/bfw-page-contact",
+    "title": "bfw-page-contact",
+    "description": "",
+    "category": "text",
+    "icon": "admin-comments",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "bfw-page-contact.php"
+    },
+    "align": "full"
+}

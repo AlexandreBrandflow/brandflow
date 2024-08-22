@@ -1,0 +1,49 @@
+.footer
+{
+  position: relative;
+
+  &__menu
+  {
+
+    a
+    {
+      font-size: 16px;
+      color:var(--color-blue-marine)
+    }
+
+    a[href$="#"] {
+      pointer-events: none;
+      cursor: default;
+      font-family: var(--mono-font);
+      letter-spacing: 0.03rem;
+      color: var(--color-primary-cta);
+      font-weight: 500;
+      font-size: 15px;
+      text-transform: uppercase;
+    }
+
+    ul
+    {
+      padding-top: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+
+  &__logo{
+    width: 434px;
+  }
+
+  &__row
+  {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__menu
+  {
+    display: contents;
+
+  }
+
+}

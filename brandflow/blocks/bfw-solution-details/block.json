@@ -1,0 +1,12 @@
+{
+    "name": "acf/bfw-solution-details",
+    "title": "bfw-solution-details",
+    "description": "",
+    "category": "text",
+    "icon": "admin-comments",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "bfw-solution-details.php"
+    },
+    "align": "full"
+}

@@ -1,0 +1,12 @@
+{
+    "name": "acf/bfw-intro-section",
+    "title": "bfw-intro-section",
+    "description": "",
+    "category": "text",
+    "icon": "admin-comments",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "bfw-intro-section.php"
+    },
+    "align": "full"
+}

@@ -1,0 +1,76 @@
+
+
+
+#main
+{
+  min-height: 100lvh;
+ 
+  // padding-top: var(--navtop);
+
+  // @media screen and (min-width: $site_breakpoint_sm)
+  // {
+  //   padding-top: calc(var(--navtop));
+  // }
+}
+
+
+// containers etc
+
+.container-large
+{
+  --base-hor-padding: 0;
+  width: 100%;
+  
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $site_breakpoint_sm)
+  {
+    //max-width: calc(100% - (var(--base-padding) * 2));
+  }
+
+
+
+  &.fullwidth
+  {
+    max-width: 100%;
+  }
+}
+
+.container-inner
+{
+  --base-hor-padding: 24px
+}
+
+@media screen and (min-width: $site_breakpoint_sm)
+{
+  .container-inner
+  {
+    --base-hor-padding: 2.5vw;
+  }
+}
+
+@media screen and (min-width: 1300px)
+{
+  .container-inner
+  {
+    --base-hor-padding: 6vw;
+  }
+}
+
+@media screen and (min-width: 1900px)
+{
+  .container-inner
+  {
+    --base-hor-padding: 10vw;
+  }
+}
+
+.container-inner
+{
+  padding-left: var(--base-hor-padding);
+  padding-right: var(--base-hor-padding);
+
+  width: 100%;
+  max-width: 100%;
+}

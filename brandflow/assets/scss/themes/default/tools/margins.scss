@@ -1,0 +1,45 @@
+@each $name, $size in $margin_vertical_sizes {
+  .my-#{$name} { margin-top: $size; margin-bottom: $size; }
+  .mt-#{$name} { margin-top: $size; }
+  .mb-#{$name} { margin-bottom: $size; }
+}
+
+.mx-auto { margin-left: auto; margin-right: auto; }
+
+.mt-auto
+{
+  margin-top: auto;
+}
+
+.mb-auto
+{
+  margin-top: auto;
+}
+
+@each $name, $size in $margin_horizontal_sizes {
+  .mx-#{$name} { margin-left: $size; margin-right: $size; }
+  .ml-#{$name} { margin-left: $size; }
+  .mr-#{$name} { margin-right: $size; }
+}
+
+@each $breakpoint_name, $breakpoint_size in $breakpoints {
+
+  @media screen and (min-width: $breakpoint_size) {
+
+    @each $name, $size in $margin_vertical_sizes {
+      .my-#{$breakpoint_name}-#{$name} { margin-top: $size; margin-bottom: $size; }
+      .mt-#{$breakpoint_name}-#{$name} { margin-top: $size; }
+      .mb-#{$breakpoint_name}-#{$name} { margin-bottom: $size; }
+    }
+
+    .mx-#{$breakpoint_name}-auto { margin-left: auto; margin-right: auto; }
+
+    @each $name, $size in $margin_horizontal_sizes {
+      .mx-#{$breakpoint_name}-#{$name} { margin-left: $size; margin-right: $size; }
+      .ml-#{$breakpoint_name}-#{$name} { margin-left: $size; }
+      .mr-#{$breakpoint_name}-#{$name} { margin-right: $size; }
+    }
+
+  }
+
+}

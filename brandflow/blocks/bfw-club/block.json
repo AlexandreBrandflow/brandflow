@@ -1,0 +1,12 @@
+{
+    "name": "acf/bfw-club",
+    "title": "bfw-club",
+    "description": "",
+    "category": "text",
+    "icon": "admin-comments",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "bfw-club.php"
+    },
+    "align": "full"
+}

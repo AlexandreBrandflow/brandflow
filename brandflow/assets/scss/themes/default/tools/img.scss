@@ -1,0 +1,15 @@
+.of-cover { object-fit: cover; }
+.of-contain { object-fit: contain; }
+.of-fill { object-fit: fill; }
+
+@each $breakpoint_name, $breakpoint_size in $breakpoints {
+
+  @media screen and (min-width: $breakpoint_size) {
+
+    .of-#{$breakpoint_name}-cover { object-fit: cover; }
+    .of-#{$breakpoint_name}-contain { object-fit: contain; }
+    .of-#{$breakpoint_name}-fill { object-fit: fill; }
+
+  }
+
+}

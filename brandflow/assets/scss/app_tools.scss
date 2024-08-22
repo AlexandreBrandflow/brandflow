@@ -1,0 +1,224 @@
+/* ============================================================= DOCUMENTATION */
+
+/* This files contains the CSS styling for global elements, such as :
+*
+*      - Global settings
+*      - Layout rules (for sections/spaces/alignment/...)
+*      - Titles & text presets
+*      - Flexbox presets
+*      - Lists styling
+*      - Colors presets
+*      - Buttons and anchors presets
+*      - Lazy loading animation
+*/
+
+/* ============================================================= GLOBAL SETTINGS */
+
+
+html
+{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-size: 18px;
+  font-variant-ligatures: none;
+
+}
+
+body
+{ 
+  background:var(--color-body);
+  font-family:var(--font);
+  color: var(--color-blue-marine);
+  overflow-x: hidden;
+}
+
+p
+{
+  line-height: 136%;
+  &+p
+  {
+    margin-top: 1.36rem;
+  }
+}
+
+strong
+{
+  font-weight: 500;
+}
+
+/* ============================================================= LAYOUT */
+
+.vpd {padding-top: var(--vpd); padding-bottom: var(--vpd)}
+.hpd {padding-left: var(--hpd); padding-right: var(--hpd)}
+
+.full {width: 100%}
+.hbfw {width: 50%}
+
+.just-bg {background-size: cover; background-position: center; background-repeat: no-repeat}
+.just-img {object-fit: cover; object-position: center}
+
+.shadow {box-shadow: 10px 10px 15px -10px rgba(51,51,51,0.1)}
+
+/* ============================================================= LISTS */
+
+ul.bullet {
+  list-style-type: disc;
+  padding-left: 30px;
+}
+
+/* ============================================================= COLORS */
+
+.white {color: #fff}
+
+.to-white:hover {color: #fff}
+
+/* ============================================================= BUTTONS AND ANCHORS */
+
+
+
+/* ============================================================= FORM */
+
+input, textarea {
+  background: none;
+  border: none;
+}
+
+/* ============================================================= LAZY LOADING */
+
+img[data-src] {
+  min-height: 200px;
+  background: linear-gradient(180deg, #fff, #C0C0C0, #fff) no-repeat;
+  background-size: 500% 500%;
+  animation: loading 1s infinite linear;
+}
+
+@keyframes loading {
+  0%   {background-position: 50% -50%}
+  100% {background-position: 50% 150%}
+}
+
+
+.font-h
+{
+  font-family:var(--h-font);
+}
+
+
+
+
+// Define the transition mixin
+@mixin transition($properties, $duration, $timing-function: var(--base-transition), $delay: 0s) {
+  transition: $properties $duration $timing-function $delay;
+}
+
+
+
+
+
+
+
+/// Fonction pour générer les styles avec hover et SVG
+@mixin generate-styles($background, $color, $hover-background, $hover-color, $svg-color, $hover-svg-color) {
+  background-color: $background;
+  color: $color;
+
+  // Transition pour tous les éléments modifiables
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &.btn {
+    // Couleur initiale du SVG
+    .svg.type--fill svg path {
+      fill: $svg-color;
+      transition: fill 0.3s ease;
+    }
+    .svg.type--outline svg path {
+      stroke: $svg-color;
+      transition: stroke 0.3s ease;
+    }
+
+    &:hover {
+      background-color: $hover-background;
+      color: $hover-color;
+
+      // Couleur du SVG au survol
+      .svg.type--fill svg path {
+        fill: $hover-svg-color;
+      }
+      .svg.type--outline svg path {
+        stroke: $hover-svg-color;
+      }
+    }
+  }
+  &a
+  {
+    &:visited
+    {
+      color: $color;
+    }
+  }
+}
+
+$colors: (
+  'primary': var(--color-primary),
+  'primary-cta': var(--color-primary-cta),
+  'secondary': var(--color-secondary),
+  'ternary': var(--color-ternary),
+  'transparent': transparent,
+  'blue-marine': var(--color-blue-marine),
+  'blue-medium': var(--color-blue-medium),
+  'blue-light': var(--color-blue-light),
+  'red-light': var(--color-red-light),
+  'red': var(--color-red),
+  'red-dark': var(--color-red-dark),
+  'green-light': var(--color-green-light),
+  'green': var(--color-green),
+  'white': var(--color-white),
+  'gray' : var(--color-gray)
+);
+
+// $styles map explanation:
+// Each style has a tuple with values in this order:
+// 1. background-color
+// 2. text color
+// 3. hover background-color
+// 4. hover text color
+// 5. initial SVG color
+// 6. hover SVG color
+// 7. border (optional, for styles with borders)
+// 8. hover border (optional, for styles with borders)
+
+$styles: (
+  'primary': (var(--color-primary), var(--color-white), var(--color-primary-cta), var(--color-white), var(--color-blue-light), var(--color-white)),
+  'primary-cta': (var(--color-primary-cta), var(--color-white), var(--color-primary-cta), var(--color-white), var(--color-blue-light), var(--color-white)),
+  'secondary': (var(--color-secondary), var(--color-white), var(--color-ternary), var(--color-primary), var(--color-red-light), var(--color-red-dark)),
+  'ternary': (var(--color-ternary), var(--color-white), var(--color-primary), var(--color-secondary), var(--color-green-light), var(--color-green)),
+  'blue-marine': (var(--color-blue-marine), var(--color-white), var(--color-blue-medium), var(--color-blue-light), var(--color-white), var(--color-blue-light)),
+  'blue-light': (var(--color-blue-light), var(--color-blue-marine), var(--color-blue-medium), var(--color-white), var(--color-white), var(--color-blue-marine)),
+  'red-light': (var(--color-red-light), var(--color-blue-marine), var(--color-red-dark), var(--color-white), var(--color-white), var(--color-blue-marine)),
+  'red': (var(--color-red), var(--color-blue-marine), var(--color-red-dark), var(--color-white), var(--color-white), var(--color-blue-marine)),
+  'red-dark': (var(--color-red-dark), var(--color-blue-marine), var(--color-red-dark), var(--color-white), var(--color-white), var(--color-blue-marine)),
+  'green': (var(--color-green), var(--color-white), var(--color-green-light), var(--color-primary), var(--color-blue-light), var(--color-blue-marine)),
+  'green-light': (var(--color-green-light), var(--color-green), var(--color-green-light), var(--color-primary), var(--color-blue-light), var(--color-blue-marine)),
+  'white': (var(--color-white), var(--color-blue-marine), var(--color-primary), var(--color-secondary), var(--color-blue-marine), var(--color-blue-light)),
+  'transparent': (transparent, var(--color-blue-marine), var(--color-white), var(--color-blue-marine), var(--color-blue-marine), var(--color-blue-marine)), 
+  'gray-light': (var(--color-gray-light), var(--color-blue-marine), var(--color-blue-light), var(--color-blue-marine), var(--color-blue-marine), var(--color-blue-marine))
+);
+
+@each $style, $values in $styles {
+  &.--style-#{$style} {
+    @include generate-styles(nth($values, 1), nth($values, 2), nth($values, 3), nth($values, 4), nth($values, 5), nth($values, 6));
+  }
+}
+
+@each $name, $value in $colors {
+  .color-#{$name} {
+    color: $value;
+  }
+}
+
+
+@each $name, $value in $colors {
+  .--svg-style-#{$name} path {
+    fill: $value;
+  }
+}

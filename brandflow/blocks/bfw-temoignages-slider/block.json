@@ -1,0 +1,12 @@
+{
+    "name": "acf/bfw-temoignages-slider",
+    "title": "bfw-temoignages-slider",
+    "description": "",
+    "category": "text",
+    "icon": "admin-comments",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "bfw-temoignages-slider.php"
+    },
+    "align": "full"
+}

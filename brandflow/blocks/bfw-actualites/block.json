@@ -1,0 +1,12 @@
+{
+    "name": "acf/bfw-actualites",
+    "title": "bfw-actualites",
+    "description": "",
+    "category": "text",
+    "icon": "admin-comments",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "bfw-actualites.php"
+    },
+    "align": "full"
+}
